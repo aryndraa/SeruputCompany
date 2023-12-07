@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seruput</title>
+
+    <!-- icon  -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/WhatsApp Image 2023-12-03 at 15.24.05.jpeg"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- sidebar -->
+    <div class="container">
+      <div class="sidebar" style="--side: 1">
+        <div class="item" id="item">
+          <div class="icon">
+            <img
+              src="assets/WhatsApp Image 2023-12-03 at 15.24.05.jpeg"
+              alt="icon"
+            />
+          </div>
+          <div class="nav">
+            <ul>
+              <li style="--i: 1">
+                <a
+                  style="--a: 1"
+                  class="link active"
+                  href="#home"
+                  id="linkblue1"
+                  onclick="blueCircel1()"
+                  >Home</a
+                >
+                <a
+                  href="#home"
+                  id="blue1"
+                  class="logo active"
+                  onclick="blueCircel1()"
+                  ><img
+                    src="assets/vector/home.svg"
+                    alt="home"
+                    width="30px"
+                    height="30px"
+                /></a>
+              </li>
+              <li style="--i: 2">
+                <a
+                  href="#design"
+                  style="--a: 2"
+                  class="link"
+                  id="linkred1"
+                  onclick="redCircel1()"
+                  >Design Grafis</a
+                >
+                <a href="#design" class="logo" id="red1" onclick="redCircel1()"
+                  ><img src="assets/vector/design.svg" alt="design"
+                /></a>
+              </li>
+              <li style="--i: 3">
+                <a
+                  href="#hweb"
+                  class="link"
+                  style="--a: 3"
+                  id="linkblue2"
+                  onclick="blueCircel2()"
+                  >WEB Developer</a
+                >
+                <a href="#web" class="logo" id="blue2" onclick="blueCircel2()"
+                  ><img src="assets/vector/web.svg" alt="web"
+                /></a>
+              </li>
+              <li style="--i: 4">
+                <a
+                  href="#profil"
+                  style="--a: 4"
+                  class="link"
+                  id="linkred2"
+                  onclick="redCircel2()"
+                  >Profile</a
+                >
+                <a href="#profil" class="logo" id="red2" onclick="redCircel2()"
+                  ><img src="assets/vector/profil.svg" alt="profil"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <button class="left" onclick="leftSide()">
+            <img src="assets/vector/left.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Home Start -->
+    <section id="home" class="home">
+      <h1 id="home-title">Seruput Company</h1>
+      <h2 class="desc-title">
+        Design <span id="Text1">Grafis</span> & Web
+        <span id="Text2">Deeveloper</span>
+      </h2>
+      <p id="moto">Anda Puas Kami Tewas</p>
+      <a href="#" id="Down-button">~</a>
+    </section>
+    <!-- Home End -->
+
+    <!-- Script JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
