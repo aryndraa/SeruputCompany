@@ -218,11 +218,13 @@ body {
 /* home */
 .home {
   background: white;
-  padding: 80px 60px 80px 120px;
+  padding: 60px 60px 80px 120px;
   text-shadow: 0 3px 2px grey;
+  margin-bottom: 40px;
+  transition: 1s;
 }
 
-#home-title {
+.page-title {
   font-size: 80px;
 }
 
@@ -233,11 +235,11 @@ body {
   color: #282828;
 }
 
-.desc-title #Text1 {
+.text1 {
   color: #f50057;
 }
 
-.desc-title #Text2 {
+.text2 {
   color: #6c63ff;
 }
 
@@ -260,4 +262,62 @@ body {
   padding: 15px 130px;
   margin: 20px 0px;
   border-radius: 50px;
+}
+
+/* Design */
+.design {
+  display: inline-flex;
+  padding: 60px 40px 90px 100px;
+  justify-content: space-between;
+  transition: 1s;
+}
+
+#design-background {
+  position: relative;
+  top: 120px;
+  width: 500px;
+  height: 351px;
+  background: none;
+}
+
+.design-container {
+  position: relative;
+  margin-left: 40px;
+}
+
+.design-title {
+  text-align: center;
+  border-bottom: #f50057 solid 2px;
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+.design-subtitle {
+  font-size: 45px;
+}
+
+.design-desc {
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.design-list-detail {
+  list-style-type: none;
+  font-size: 18px;
+}
+
+.list-item-detail {
+  margin: 20px 0px;
+}
+
+.jasa-button {
+  position: relative;
+  left: 250px;
+  top: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  background-color: #f50057;
+  padding: 0px 30px;
 }

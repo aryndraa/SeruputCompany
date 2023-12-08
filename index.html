@@ -1,123 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Seruput</title>
 
-    <!-- icon  -->
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="assets/WhatsApp Image 2023-12-03 at 15.24.05.jpeg"
-    />
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seruput</title>
 
-    <!-- style css -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- sidebar -->
-    <div class="container">
-      <div class="sidebar" style="--side: 1">
-        <div class="item" id="item">
-          <div class="icon">
-            <img
-              src="assets/WhatsApp Image 2023-12-03 at 15.24.05.jpeg"
-              alt="icon"
-            />
-          </div>
-          <div class="nav">
-            <ul>
-              <li style="--i: 1">
-                <a
-                  style="--a: 1"
-                  class="link active"
-                  href="#home"
-                  id="linkblue1"
-                  onclick="blueCircel1()"
-                  >Home</a
-                >
-                <a
-                  href="#home"
-                  id="blue1"
-                  class="logo active"
-                  onclick="blueCircel1()"
-                  ><img
-                    src="assets/vector/home.svg"
-                    alt="home"
-                    width="30px"
-                    height="30px"
-                /></a>
-              </li>
-              <li style="--i: 2">
-                <a
-                  href="#design"
-                  style="--a: 2"
-                  class="link"
-                  id="linkred1"
-                  onclick="redCircel1()"
-                  >Design Grafis</a
-                >
-                <a href="#design" class="logo" id="red1" onclick="redCircel1()"
-                  ><img src="assets/vector/design.svg" alt="design"
-                /></a>
-              </li>
-              <li style="--i: 3">
-                <a
-                  href="#hweb"
-                  class="link"
-                  style="--a: 3"
-                  id="linkblue2"
-                  onclick="blueCircel2()"
-                  >WEB Developer</a
-                >
-                <a href="#web" class="logo" id="blue2" onclick="blueCircel2()"
-                  ><img src="assets/vector/web.svg" alt="web"
-                /></a>
-              </li>
-              <li style="--i: 4">
-                <a
-                  href="#profil"
-                  style="--a: 4"
-                  class="link"
-                  id="linkred2"
-                  onclick="redCircel2()"
-                  >Profile</a
-                >
-                <a href="#profil" class="logo" id="red2" onclick="redCircel2()"
-                  ><img src="assets/vector/profil.svg" alt="profil"
-                /></a>
-              </li>
-            </ul>
-          </div>
-          <button class="left" onclick="leftSide()">
-            <img src="assets/vector/left.svg" alt="" />
-          </button>
+  <!-- icon  -->
+  <link rel="icon" type="image/x-icon" href="assets/WhatsApp Image 2023-12-03 at 15.24.05.jpeg" />
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap" rel="stylesheet" />
+
+  <!-- style css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- sidebar -->
+  <div class="container">
+    <div class="sidebar" style="--side: 1">
+      <div class="item" id="item">
+        <div class="icon">
+          <img src="assets/WhatsApp Image 2023-12-03 at 15.24.05.jpeg" alt="icon" />
         </div>
+        <div class="nav">
+          <ul>
+            <li style="--i: 1">
+              <a style="--a: 1" class="link active" href="#home" id="linkblue1" onclick="blueCircel1()">Home</a>
+              <a href="#home" id="blue1" class="logo active" onclick="blueCircel1()"><img src="assets/vector/home.svg"
+                  alt="home" width="30px" height="30px" /></a>
+            </li>
+            <li style="--i: 2">
+              <a href="#design" style="--a: 2" class="link" id="linkred1" onclick="redCircel1()">Design Grafis</a>
+              <a href="#design" class="logo" id="red1" onclick="redCircel1()"><img src="assets/vector/design.svg"
+                  alt="design" /></a>
+            </li>
+            <li style="--i: 3">
+              <a href="#hweb" class="link" style="--a: 3" id="linkblue2" onclick="blueCircel2()">WEB Developer</a>
+              <a href="#web" class="logo" id="blue2" onclick="blueCircel2()"><img src="assets/vector/web.svg"
+                  alt="web" /></a>
+            </li>
+            <li style="--i: 4">
+              <a href="#profil" style="--a: 4" class="link" id="linkred2" onclick="redCircel2()">Profile</a>
+              <a href="#profil" class="logo" id="red2" onclick="redCircel2()"><img src="assets/vector/profil.svg"
+                  alt="profil" /></a>
+            </li>
+          </ul>
+        </div>
+        <button class="left" onclick="leftSide()">
+          <img src="assets/vector/left.svg" alt="" />
+        </button>
       </div>
     </div>
+  </div>
 
-    <!-- Home Start -->
-    <section id="home" class="home">
-      <h1 id="home-title">Seruput Company</h1>
-      <img src="assets/undraw_programming_re_kg9v.svg" alt="programing" id="home-background">
-      <h2 class="desc-title">
-        Design <span id="Text1">Grafis</span> & Web
-        <span id="Text2">Developer</span>
-      </h2>
-      <p id="moto">Anda Puas Kami Tewas</p>
-      <a href="#" id="Down-button"><img src="assets/vector/arrow_downward.png" alt="arrow-down"></a>
-    </section>
-    <!-- Home End -->
+  <!-- Home Start -->
+  <section id="home" class="home">
+    <h1 class="page-title">Seruput Company</h1>
+    <img src="assets/undraw_programming_re_kg9v.svg" alt="programing" id="home-background">
+    <h2 class="desc-title">
+      Design <span class="text1">Grafis</span> & Web
+      <span class="text2">Developer</span>
+    </h2>
+    <p id="moto">Anda Puas Kami Tewas</p>
+    <a href="#design" id="Down-button"><img src="assets/vector/arrow_downward.png" alt="arrow-down"></a>
+  </section>
+  <!-- Home End -->
 
-    <!-- Script JS -->
-    <script src="script.js"></script>
-  </body>
+  <!-- Design Start -->
+  <section id="design" class="design">
+    <img src="assets/undraw_designer_life_re_6ywf 1.png" alt="Designer-life" id="design-background">
+    <div class="design-container">
+      <h1 class="design-title">Design <span class="text1">Graphic</span></h1>
+      <h2 class="design-subtitle">Seruput Design Graphic</h2>
+      <h3 class="design-desc">Jadikan Brand Anda Bersinar dengan Desain Grafis yang <span class="text1">Kreatif</span> Dan <span class="text2">Elegan</span></h3>
+      <ul class="design-list-detail">
+        <li class="list-item-detail">> Ciptakan <span class="text1">Logo</span> yang Mewakili Esensi Bisnis Anda</li>
+        <li class="list-item-detail">> Desain <span class="text2">Brand</span> yang Membuat Anda Menonjol di Pasar</li>
+        <li class="list-item-detail">> Ciptakan Produk <span class="text1">Merchandise</span> yang Memikat Perhatian</li>
+      </ul>
+      <a href="#" class="jasa-button">Jasa Lainnya</a>
+    </div>
+  </section>
+  <!-- Design End -->
+
+  <!-- Script JS -->
+  <script src="script.js"></script>
+</body>
+
 </html>
