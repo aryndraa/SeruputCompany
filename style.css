@@ -30,6 +30,7 @@ body {
 }
 
 .sidebar {
+  box-shadow: 2px 0 30px black;
   min-width: 80px;
   display: flex;
   justify-content: center;
@@ -213,4 +214,50 @@ body {
 .sidebar .item .nav li .link {
   display: none;
 }
+
 /* home */
+.home {
+  background: white;
+  padding: 80px 60px 80px 120px;
+  text-shadow: 0 3px 2px grey;
+}
+
+#home-title {
+  font-size: 80px;
+}
+
+.desc-title {
+  font-size: 50px;
+  border-bottom: 2px solid black;
+  padding: 10px 0px;
+  color: #282828;
+}
+
+.desc-title #Text1 {
+  color: #f50057;
+}
+
+.desc-title #Text2 {
+  color: #6c63ff;
+}
+
+.home p {
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+#home-background {
+  float: right;
+  width: 550px;
+  height: 550px;
+  background-color: white;
+}
+
+.home a {
+  text-decoration: none;
+  color: white;
+  background-color: #f50057;
+  padding: 15px 130px;
+  margin: 20px 0px;
+  border-radius: 50px;
+}
