@@ -88,3 +88,37 @@ function leftSide() {
     itemSidebar.classList.remove("disable");
   }
 }
+
+// design active
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll("section");
+
+  function handleScroll() {
+    const scrollPosition = window.scrollY;
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+
+      if (
+        scrollPosition >= sectionTop &&
+        scrollPosition < sectionTop + sectionHeight
+      ) {
+        section.classList.add("active");
+      }
+    });
+  }
+
+  // Initial check on page load
+  handleScroll();
+
+  // Add scroll event listener
+  window.addEventListener("scroll", handleScroll);
+});
+
+// home page Blur
+document,
+  addEventListener("scroll", function () {
+    var home = document.getElementById("home");
+    (home.style.opacity = 1 - this.window), this.scrollY / 300;
+  });

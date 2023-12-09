@@ -1,93 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seruput</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Seruput</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
 
-  <!-- icon  -->
-  <link rel="icon" type="image/x-icon" href="assets/WhatsApp Image 2023-12-03 at 15.24.05.jpeg" />
-  <!-- font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap" rel="stylesheet" />
+    <!-- icon  -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/WhatsApp Image 2023-12-03 at 15.24.05.jpeg"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- style css -->
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-  <!-- sidebar -->
-  <div class="container">
-    <div class="sidebar" style="--side: 1">
-      <div class="item" id="item">
-        <div class="icon">
-          <img src="assets/WhatsApp Image 2023-12-03 at 15.24.05.jpeg" alt="icon" />
+  <body>
+    <!-- sidebar -->
+    <div class="container">
+      <div class="sidebar" style="--side: 1">
+        <div class="item" id="item">
+          <div class="icon">
+            <img
+              src="assets/WhatsApp Image 2023-12-03 at 15.24.05.jpeg"
+              alt="icon"
+            />
+          </div>
+          <div class="nav" id="navbar-example3">
+            <ul>
+              <li style="--i: 1">
+                <a
+                  style="--a: 1"
+                  class="link active"
+                  href="#home"
+                  id="linkblue1"
+                  onclick="blueCircel1()"
+                  >Home</a
+                >
+                <a
+                  href="#home"
+                  id="blue1"
+                  class="logo active"
+                  onclick="blueCircel1()"
+                  ><img
+                    src="assets/vector/home.svg"
+                    alt="home"
+                    width="30px"
+                    height="30px"
+                /></a>
+              </li>
+              <li style="--i: 2">
+                <a
+                  href="#design"
+                  style="--a: 2"
+                  class="link"
+                  id="linkred1"
+                  onclick="redCircel1()"
+                  >Design Grafis</a
+                >
+                <a href="#design" class="logo" id="red1" onclick="redCircel1()"
+                  ><img src="assets/vector/design.svg" alt="design"
+                /></a>
+              </li>
+              <li style="--i: 3">
+                <a
+                  href="#hweb"
+                  class="link"
+                  style="--a: 3"
+                  id="linkblue2"
+                  onclick="blueCircel2()"
+                  >WEB Developer</a
+                >
+                <a href="#web" class="logo" id="blue2" onclick="blueCircel2()"
+                  ><img src="assets/vector/web.svg" alt="web"
+                /></a>
+              </li>
+              <li style="--i: 4">
+                <a
+                  href="#profil"
+                  style="--a: 4"
+                  class="link"
+                  id="linkred2"
+                  onclick="redCircel2()"
+                  >Profile</a
+                >
+                <a href="#profil" class="logo" id="red2" onclick="redCircel2()"
+                  ><img src="assets/vector/profil.svg" alt="profil"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <button class="left" onclick="leftSide()">
+            <img src="assets/vector/left.svg" alt="" />
+          </button>
         </div>
-        <div class="nav">
-          <ul>
-            <li style="--i: 1">
-              <a style="--a: 1" class="link active" href="#home" id="linkblue1" onclick="blueCircel1()">Home</a>
-              <a href="#home" id="blue1" class="logo active" onclick="blueCircel1()"><img src="assets/vector/home.svg"
-                  alt="home" width="30px" height="30px" /></a>
-            </li>
-            <li style="--i: 2">
-              <a href="#design" style="--a: 2" class="link" id="linkred1" onclick="redCircel1()">Design Grafis</a>
-              <a href="#design" class="logo" id="red1" onclick="redCircel1()"><img src="assets/vector/design.svg"
-                  alt="design" /></a>
-            </li>
-            <li style="--i: 3">
-              <a href="#hweb" class="link" style="--a: 3" id="linkblue2" onclick="blueCircel2()">WEB Developer</a>
-              <a href="#web" class="logo" id="blue2" onclick="blueCircel2()"><img src="assets/vector/web.svg"
-                  alt="web" /></a>
-            </li>
-            <li style="--i: 4">
-              <a href="#profil" style="--a: 4" class="link" id="linkred2" onclick="redCircel2()">Profile</a>
-              <a href="#profil" class="logo" id="red2" onclick="redCircel2()"><img src="assets/vector/profil.svg"
-                  alt="profil" /></a>
-            </li>
-          </ul>
-        </div>
-        <button class="left" onclick="leftSide()">
-          <img src="assets/vector/left.svg" alt="" />
-        </button>
       </div>
     </div>
-  </div>
 
-  <!-- Home Start -->
-  <section id="home" class="home">
-    <h1 class="page-title">Seruput Company</h1>
-    <img src="assets/undraw_programming_re_kg9v.svg" alt="programing" id="home-background">
-    <h2 class="desc-title">
-      Design <span class="text1">Grafis</span> & Web
-      <span class="text2">Developer</span>
-    </h2>
-    <p id="moto">Anda Puas Kami Tewas</p>
-    <a href="#design" id="Down-button"><img src="assets/vector/arrow_downward.png" alt="arrow-down"></a>
-  </section>
-  <!-- Home End -->
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example3"
+      data-bs-smooth-scroll="true"
+      class="scrollspy-example-2"
+      tabindex="0"
+    >
+      <!-- Home Start -->
+      <section class="home" id="home">
+        <div class="home-container">
+          <h1 style="--home: 1">Seruput Company</h1>
+          <div class="container-span">
+            <h2 style="--home: 2">
+              Design <span class="text1">Graphic</span> & Web
+              <span class="text2">Developer</span>
+            </h2>
+          </div>
+          <p style="--home: 3">Anda Puas Kami Tewas</p>
+          <a style="--home: 4" href="#design"
+            ><img src="assets/vector/downArrow.svg" alt="" width="25px"
+          /></a>
+        </div>
+      </section>
 
-  <!-- Design Start -->
-  <section id="design" class="design">
-    <img src="assets/undraw_designer_life_re_6ywf 1.png" alt="Designer-life" id="design-background">
-    <div class="design-container">
-      <h1 class="design-title">Design <span class="text1">Graphic</span></h1>
-      <h2 class="design-subtitle">Seruput Design Graphic</h2>
-      <h3 class="design-desc">Jadikan Brand Anda Bersinar dengan Desain Grafis yang <span class="text1">Kreatif</span> Dan <span class="text2">Elegan</span></h3>
-      <ul class="design-list-detail">
-        <li class="list-item-detail">> Ciptakan <span class="text1">Logo</span> yang Mewakili Esensi Bisnis Anda</li>
-        <li class="list-item-detail">> Desain <span class="text2">Brand</span> yang Membuat Anda Menonjol di Pasar</li>
-        <li class="list-item-detail">> Ciptakan Produk <span class="text1">Merchandise</span> yang Memikat Perhatian</li>
-      </ul>
-      <a href="#" class="jasa-button">Jasa Lainnya</a>
+      <!-- Design Start -->
+      <section id="design" class="design">
+        <img
+          src="assets/undraw_designer_life_re_6ywf 1.png"
+          alt="Designer-life"
+          id="design-background"
+        />
+        <div class="design-container">
+          <h1 class="design-title">
+            Design <span class="text1">Graphic</span>
+          </h1>
+          <h2 class="design-subtitle">Seruput Design Graphic</h2>
+          <h3 class="design-desc">
+            Jadikan Brand Anda Bersinar dengan Desain Grafis yang
+            <span class="text1">Kreatif</span> Dan
+            <span class="text2">Elegan</span>
+          </h3>
+          <ul class="design-list-detail">
+            <li class="list-item-detail" style="--b: 1">
+              > Ciptakan <span class="text1">Logo</span> yang Mewakili Esensi
+              Bisnis Anda
+            </li>
+            <li class="list-item-detail" style="--b: 2">
+              > Desain <span class="text2">Brand</span> yang Membuat Anda
+              Menonjol di Pasar
+            </li>
+            <li class="list-item-detail" style="--b: 3">
+              > Ciptakan Produk <span class="text1">Merchandise</span> yang
+              Memikat Perhatian
+            </li>
+          </ul>
+          <a href="#" class="jasa-button">Jasa Lainnya</a>
+        </div>
+      </section>
+      <!-- Design End -->
     </div>
-  </section>
-  <!-- Design End -->
 
-  <!-- Script JS -->
-  <script src="script.js"></script>
-</body>
+    <!-- Script JS -->
+    <script src="script.js"></script>
 
+    <!-- script boostrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
